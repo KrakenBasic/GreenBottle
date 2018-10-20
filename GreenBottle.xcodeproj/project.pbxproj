@@ -15,7 +15,7 @@
 		CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A4217B98D800F15D69 /* BeerListTableView.swift */; };
 		CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */; };
 		CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777AC217B9B4C00F15D69 /* Beer.swift */; };
-		CBD777B1217BA51300F15D69 /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777B0217BA51300F15D69 /* BeerCell.swift */; };
+		CBD777B3217BA80C00F15D69 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		CBD777A4217B98D800F15D69 /* BeerListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableView.swift; sourceTree = "<group>"; };
 		CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		CBD777AC217B9B4C00F15D69 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
-		CBD777B0217BA51300F15D69 /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
+		CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 				CBD777A4217B98D800F15D69 /* BeerListTableView.swift */,
 				CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */,
 				CBD777AC217B9B4C00F15D69 /* Beer.swift */,
-				CBD777B0217BA51300F15D69 /* BeerCell.swift */,
+				CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */,
 			);
 			path = GreenBottle;
 			sourceTree = "<group>";
@@ -148,9 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */,
+				CBD777B3217BA80C00F15D69 /* BeerTableViewCell.swift in Sources */,
 				CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */,
 				CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */,
-				CBD777B1217BA51300F15D69 /* BeerCell.swift in Sources */,
 				CA783B5F217B821D00329F32 /* ViewController.swift in Sources */,
 				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 			);

@@ -14,12 +14,7 @@ class BeerListTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        beers = Beer.loadSampleBeers()
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,7 +26,11 @@ class BeerListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(107.0)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,10 +38,14 @@ class BeerListTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BeerCellIdentifier") as? BeerCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BeerCellIdentifier") as? BeerTableViewCell else {
             fatalError("Could not dequeue a cell.")
         }
-        //let beer = beers[indexPath.row]
+        let beer = beers[indexPath.row]
+        //cell.imageBeer = UIImage?(named: "beer")
+        cell.nameBeer.text = beer.name
+        cell.sloganBeer.text = beer.slogan
+        cell.porcentBeer.text = beer.porcent
         return cell
     }
 

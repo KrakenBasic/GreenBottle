@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerCellIdentifier" rowHeight="106" id="avk-ap-wIZ" customClass="BeerCell" customModule="GreenBottle" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="106"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerCellIdentifier" rowHeight="108" id="avk-ap-wIZ" customClass="BeerTableViewCell" customModule="GreenBottle" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="avk-ap-wIZ" id="13n-df-aWE">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="105.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-LC-YsE">
@@ -32,7 +32,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T7e-W2-EJ2">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="T7e-W2-EJ2">
                                             <rect key="frame" x="16" y="5" width="57" height="57"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="57" id="9Qg-12-84Y"/>
@@ -66,6 +66,12 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2gS-gr-IYg" secondAttribute="trailing" constant="20" symbolic="YES" id="qnQ-rs-xKc"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageBeer" destination="T7e-W2-EJ2" id="yUA-n5-lmR"/>
+                                    <outlet property="nameBeer" destination="JRd-LC-YsE" id="iPD-0I-wwk"/>
+                                    <outlet property="porcentBeer" destination="sew-S1-kb0" id="F7h-tQ-xYt"/>
+                                    <outlet property="sloganBeer" destination="2gS-gr-IYg" id="lzK-hn-SpE"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -131,4 +137,7 @@
             <point key="canvasLocation" x="-229.59999999999999" y="-497.90104947526243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="beer" width="1221" height="1300"/>
+    </resources>
 </document>
