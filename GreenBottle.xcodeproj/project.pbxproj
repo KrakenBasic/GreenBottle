@@ -12,6 +12,10 @@
 		CA783B62217B821D00329F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B60217B821D00329F32 /* Main.storyboard */; };
 		CA783B64217B821F00329F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA783B63217B821F00329F32 /* Assets.xcassets */; };
 		CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B65217B821F00329F32 /* LaunchScreen.storyboard */; };
+		CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A4217B98D800F15D69 /* BeerListTableView.swift */; };
+		CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */; };
+		CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777AC217B9B4C00F15D69 /* Beer.swift */; };
+		CBD777B1217BA51300F15D69 /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777B0217BA51300F15D69 /* BeerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CA783B63217B821F00329F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA783B66217B821F00329F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA783B68217B821F00329F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD777A4217B98D800F15D69 /* BeerListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableView.swift; sourceTree = "<group>"; };
+		CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
+		CBD777AC217B9B4C00F15D69 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		CBD777B0217BA51300F15D69 /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				CA783B63217B821F00329F32 /* Assets.xcassets */,
 				CA783B65217B821F00329F32 /* LaunchScreen.storyboard */,
 				CA783B68217B821F00329F32 /* Info.plist */,
+				CBD777A4217B98D800F15D69 /* BeerListTableView.swift */,
+				CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */,
+				CBD777AC217B9B4C00F15D69 /* Beer.swift */,
+				CBD777B0217BA51300F15D69 /* BeerCell.swift */,
 			);
 			path = GreenBottle;
 			sourceTree = "<group>";
@@ -135,6 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */,
+				CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */,
+				CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */,
+				CBD777B1217BA51300F15D69 /* BeerCell.swift in Sources */,
 				CA783B5F217B821D00329F32 /* ViewController.swift in Sources */,
 				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 			);
