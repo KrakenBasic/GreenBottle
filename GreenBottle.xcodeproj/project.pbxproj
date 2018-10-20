@@ -14,7 +14,10 @@
 		CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B65217B821F00329F32 /* LaunchScreen.storyboard */; };
 		CA783B71217B91FF00329F32 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B70217B91FF00329F32 /* Login.storyboard */; };
 		CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B72217B941A00329F32 /* SignInViewController.swift */; };
-		CA783B75217B943000329F32 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B74217B943000329F32 /* LoginViewController.swift */; };
+		CA783B77217B9C3800329F32 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B76217B9C3800329F32 /* RegisterViewController.swift */; };
+		CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B78217BA66C00329F32 /* InitialLoginView.swift */; };
+		CA783B7D217BAD3F00329F32 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */; };
+		CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +30,10 @@
 		CA783B68217B821F00329F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA783B70217B91FF00329F32 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		CA783B72217B941A00329F32 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		CA783B74217B943000329F32 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CA783B76217B9C3800329F32 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CA783B78217BA66C00329F32 /* InitialLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialLoginView.swift; sourceTree = "<group>"; };
+		CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +73,11 @@
 				CA783B65217B821F00329F32 /* LaunchScreen.storyboard */,
 				CA783B68217B821F00329F32 /* Info.plist */,
 				CA783B70217B91FF00329F32 /* Login.storyboard */,
-				CA783B74217B943000329F32 /* LoginViewController.swift */,
 				CA783B72217B941A00329F32 /* SignInViewController.swift */,
+				CA783B76217B9C3800329F32 /* RegisterViewController.swift */,
+				CA783B78217BA66C00329F32 /* InitialLoginView.swift */,
+				CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */,
+				CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */,
 			);
 			path = GreenBottle;
 			sourceTree = "<group>";
@@ -145,10 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA783B75217B943000329F32 /* LoginViewController.swift in Sources */,
 				CA783B5F217B821D00329F32 /* ViewController.swift in Sources */,
+				CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */,
 				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
+				CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */,
 				CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */,
+				CA783B77217B9C3800329F32 /* RegisterViewController.swift in Sources */,
+				CA783B7D217BAD3F00329F32 /* KeychainItemAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

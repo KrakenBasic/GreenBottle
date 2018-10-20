@@ -9,6 +9,10 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    
+    @IBOutlet weak var userTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,18 @@ class SignInViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        
+        if userTextField.text == "Josue" && passwordTextField.text == "12345"{
+            //Cambiar lo siguiente cuando se tenga acceso a las credenciales en el back:
+            let register = self.storyboard?.instantiateViewController(withIdentifier: "LoginSB") as! RegisterViewController
+//            let register = RegisterViewController()
+            present(register, animated: true, completion: nil)
+        }
+        
     }
     
 

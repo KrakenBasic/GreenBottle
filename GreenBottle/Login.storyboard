@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o5M-ld-vtg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,7 +14,7 @@
         <scene sceneID="uMS-kO-cA3">
             <objects>
                 <viewController id="Q64-gU-4ZE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rFr-PG-vhC">
+                    <view key="view" contentMode="scaleToFill" id="rFr-PG-vhC" userLabel="initialLoginView" customClass="InitialLoginView" customModule="GreenBottle" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -42,6 +42,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="initialLoginView"/>
                         <viewLayoutGuide key="safeArea" id="LrL-0O-5Qo"/>
                     </view>
                     <navigationItem key="navigationItem" title="GREEN BOTTLE" id="yM5-J0-dei">
@@ -52,10 +53,10 @@
             </objects>
             <point key="canvasLocation" x="1040.8" y="148.87556221889056"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="NM0-YO-7cw">
             <objects>
-                <viewController id="cKA-wA-lgX" customClass="LoginViewController" customModule="GreenBottle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginSB" id="cKA-wA-lgX" customClass="RegisterViewController" customModule="GreenBottle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wSc-AO-y36">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,6 +166,9 @@
                                 <rect key="frame" x="158" y="569" width="59" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="lhG-oi-fB2" eventType="touchUpInside" id="LPx-vM-HNY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -184,6 +188,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p63-wA-mum"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="Q9d-bA-bCb" id="Kp1-I5-boF"/>
+                        <outlet property="userTextField" destination="CAA-Gu-Or1" id="kcG-qz-hCq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P7F-7O-i9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
