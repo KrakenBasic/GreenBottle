@@ -11,6 +11,9 @@ import UIKit
 class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var nameTF: UITextField!
+    @IBOutlet weak var passwdTF: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,16 +21,39 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     @IBAction func changePhoto(_ sender: Any) {
+        let actionSheet = UIAlertController(title: "Photos", message: "Select your source photo", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        let imagePìckerView = UIImagePickerController()
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action) in
+            
+            imagePìckerView.sourceType = .photoLibrary
+            imagePìckerView.allowsEditing = true //para que cuando la seleccionemos pase a otro view controller que le permitira editar
+            imagePìckerView.delegate = self
+            self.present(imagePìckerView, animated: true, completion: nil)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action) in
+            imagePìckerView.sourceType = .camera
+        }))
+        present(actionSheet, animated: true, completion: nil)
+        imagePìckerView.allowsEditing = true //para que cuando la seleccionemos pase a otro view controller que le permitira editar
+        imagePìckerView.delegate = self
+        self.present(imagePìckerView, animated: true, completion: nil)
+        //Pedir permisos al usuario: infoplist -> privacy camera
+
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        
+        print("Selection Cancelled")
+        picker.dismiss(animated: true, completion: nil)
+        
     }
-    */
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        print("PHOTO DICTIONARY: \(info)")
+        guard let image = info[UIImagePickerControllerEditedImage] as? UIImage else {return}
+        profileImage.image = image
+        picker.dismiss(animated: true, completion: nil)
+    }
 
 }

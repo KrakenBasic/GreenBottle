@@ -189,6 +189,8 @@
                         <viewLayoutGuide key="safeArea" id="HzR-u8-nFo"/>
                     </view>
                     <connections>
+                        <outlet property="nameTF" destination="rFx-jc-n9D" id="W8N-jh-izD"/>
+                        <outlet property="passwdTF" destination="wnF-MO-Zvq" id="ZSw-xJ-w5X"/>
                         <outlet property="profileImage" destination="Vk4-tp-3De" id="UlR-CU-vT3"/>
                     </connections>
                 </viewController>
