@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  GreenBottle
 //
-//  Created by Alexis Celestino Solís on 10/20/18.
-//  Copyright © 2018 Basic Kraken. All rights reserved.
+//  Created by Josue on 20/10/18.
+//  Copyright © 2018 Josue. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
