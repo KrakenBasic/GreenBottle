@@ -14,6 +14,7 @@
 		CA783B62217B821D00329F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B60217B821D00329F32 /* Main.storyboard */; };
 		CA783B64217B821F00329F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA783B63217B821F00329F32 /* Assets.xcassets */; };
 		CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B65217B821F00329F32 /* LaunchScreen.storyboard */; };
+		CB675A022183CF62000BC1BE /* BeerDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB675A012183CF62000BC1BE /* BeerDetailTableViewCell.swift */; };
 		CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A4217B98D800F15D69 /* BeerListTableView.swift */; };
 		CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */; };
 		CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777AC217B9B4C00F15D69 /* Beer.swift */; };
@@ -30,6 +31,7 @@
 		CA783B63217B821F00329F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA783B66217B821F00329F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA783B68217B821F00329F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB675A012183CF62000BC1BE /* BeerDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailTableViewCell.swift; sourceTree = "<group>"; };
 		CBD777A4217B98D800F15D69 /* BeerListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableView.swift; sourceTree = "<group>"; };
 		CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		CBD777AC217B9B4C00F15D69 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
@@ -72,12 +74,13 @@
 				CA783B63217B821F00329F32 /* Assets.xcassets */,
 				CA783B65217B821F00329F32 /* LaunchScreen.storyboard */,
 				CA783B68217B821F00329F32 /* Info.plist */,
+				CBD777AC217B9B4C00F15D69 /* Beer.swift */,
+				4CECE232217C0D1F00041491 /* BeerPorcentView.swift */,
 				CBD777A4217B98D800F15D69 /* BeerListTableView.swift */,
 				CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */,
-				CBD777AC217B9B4C00F15D69 /* Beer.swift */,
 				CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */,
-				4CECE232217C0D1F00041491 /* BeerPorcentView.swift */,
 				4CECE234217C1A8500041491 /* BeerDetailViewController.swift */,
+				CB675A012183CF62000BC1BE /* BeerDetailTableViewCell.swift */,
 			);
 			path = GreenBottle;
 			sourceTree = "<group>";
@@ -155,6 +158,7 @@
 			files = (
 				CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */,
 				4CECE235217C1A8500041491 /* BeerDetailViewController.swift in Sources */,
+				CB675A022183CF62000BC1BE /* BeerDetailTableViewCell.swift in Sources */,
 				CBD777B3217BA80C00F15D69 /* BeerTableViewCell.swift in Sources */,
 				4CECE233217C0D1F00041491 /* BeerPorcentView.swift in Sources */,
 				CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */,
