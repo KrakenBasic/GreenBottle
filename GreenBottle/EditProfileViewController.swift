@@ -8,11 +8,15 @@
 
 import UIKit
 
+
+
 class EditProfileViewController: UIViewController,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var nameTF: UITextField!
     @IBOutlet weak var passwdTF: UITextField!
+    
+    var delegate: EditProfileViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,10 +54,32 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        print("PHOTO DICTIONARY: \(info)")
+        let URLimage = info["UIImagePickerControllerImageURL"]
+        print(URLimage!)
         guard let image = info[UIImagePickerControllerEditedImage] as? UIImage else {return}
         profileImage.image = image
         picker.dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func saveButtonIsTap(_ sender: UIButton) {
+        
+        guard nameTF.text != "", passwdTF.text != "", profileImage != nil else {
+            let alert = UIAlertController(title: "Error", message: "You need to have a Username and a Password", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        let currentUser = User()
+        currentUser.name =  nameTF.text!
+        currentUser.passwd = passwdTF.text!
+        currentUser.userImage = profileImage.image!
+        delegate?.editProfileViewController(self, didFinishSaving: currentUser)
+        //self.dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
+        
+    }
+    
+    
+    
 
 }
