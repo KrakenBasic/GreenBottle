@@ -1,28 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5ah-2K-s5U">
+
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Menu-->
+        <scene sceneID="5l7-H9-LzI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GreenBottle" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+
+                <tableViewController id="aQ8-eA-sKL" customClass="BeerListTableViewController" customModule="GreenBottle" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BqK-tK-JZG" customClass="BeerListTableView" customModule="GreenBottle" customModuleProvider="target">
+
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerCellIdentifier" rowHeight="108" id="avk-ap-wIZ" customClass="BeerTableViewCell" customModule="GreenBottle" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="108"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="avk-ap-wIZ" id="13n-df-aWE">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="107.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRd-LC-YsE">
+                                            <rect key="frame" x="90" y="11" width="45" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="T7e-W2-EJ2">
+                                            <rect key="frame" x="16" y="5" width="57" height="57"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="57" id="9Qg-12-84Y"/>
+                                                <constraint firstAttribute="height" constant="57" id="aSD-sZ-aO6"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porcent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sew-S1-kb0">
+                                            <rect key="frame" x="16" y="74" width="60" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slogan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gS-gr-IYg">
+                                            <rect key="frame" x="90" y="41" width="53" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JRd-LC-YsE" secondAttribute="trailing" constant="20" symbolic="YES" id="CHp-8y-wqi"/>
+                                        <constraint firstItem="JRd-LC-YsE" firstAttribute="leading" secondItem="T7e-W2-EJ2" secondAttribute="trailing" constant="17" id="Oqh-Vp-pbC"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sew-S1-kb0" secondAttribute="trailing" constant="20" symbolic="YES" id="OtG-Hx-WbC"/>
+                                        <constraint firstItem="T7e-W2-EJ2" firstAttribute="top" secondItem="13n-df-aWE" secondAttribute="top" constant="5" id="PkB-vE-iLC"/>
+                                        <constraint firstItem="2gS-gr-IYg" firstAttribute="leading" secondItem="T7e-W2-EJ2" secondAttribute="trailing" constant="17" id="Rig-bF-Dq6"/>
+                                        <constraint firstItem="JRd-LC-YsE" firstAttribute="top" secondItem="13n-df-aWE" secondAttribute="top" constant="11" id="Wrd-L7-wBg"/>
+                                        <constraint firstItem="sew-S1-kb0" firstAttribute="top" secondItem="T7e-W2-EJ2" secondAttribute="bottom" constant="12" id="aa9-mP-OlO"/>
+                                        <constraint firstItem="T7e-W2-EJ2" firstAttribute="leading" secondItem="13n-df-aWE" secondAttribute="leading" constant="16" id="c4w-Cl-yLa"/>
+                                        <constraint firstItem="2gS-gr-IYg" firstAttribute="top" secondItem="JRd-LC-YsE" secondAttribute="bottom" constant="9" id="m1M-5h-Kvf"/>
+                                        <constraint firstItem="sew-S1-kb0" firstAttribute="leading" secondItem="13n-df-aWE" secondAttribute="leading" constant="16" id="ngU-qf-tWU"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2gS-gr-IYg" secondAttribute="trailing" constant="20" symbolic="YES" id="qnQ-rs-xKc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageBeer" destination="T7e-W2-EJ2" id="yUA-n5-lmR"/>
+                                    <outlet property="nameBeer" destination="JRd-LC-YsE" id="iPD-0I-wwk"/>
+                                    <outlet property="porcentBeer" destination="sew-S1-kb0" id="F7h-tQ-xYt"/>
+                                    <outlet property="sloganBeer" destination="2gS-gr-IYg" id="lzK-hn-SpE"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aQ8-eA-sKL" id="IqI-kk-6om"/>
+                            <outlet property="delegate" destination="aQ8-eA-sKL" id="K6w-ie-fXf"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Menu" id="71m-LB-ixm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afQ-a4-Nxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="-1235.5322338830586"/>
+        </scene>
+        <!--Your Order-->
+        <scene sceneID="BMm-FQ-GF1">
+            <objects>
+                <viewController id="x4R-h9-iWt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ntS-CG-wqF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Bu9-Te-JQc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Your Order" id="XCt-LT-fKc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bwd-tf-kCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709.60000000000002" y="-491.60419790104953"/>
+        </scene>
+        <!--User-->
+        <scene sceneID="33w-G4-zx7">
+            <objects>
+                <viewController id="5bA-Z5-Ge5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wO8-j7-nlh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pEo-R1-mfg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="User" id="aCw-6V-B8f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ieg-pk-VvS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709.60000000000002" y="239.73013493253376"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jNa-1p-z6f">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5ah-2K-s5U" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RhU-7H-kGP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="aQ8-eA-sKL" kind="relationship" relationship="viewControllers" id="kuv-lR-Dae"/>
+                        <segue destination="x4R-h9-iWt" kind="relationship" relationship="viewControllers" id="3yj-lP-tbJ"/>
+                        <segue destination="5bA-Z5-Ge5" kind="relationship" relationship="viewControllers" id="Sb2-Vy-EnK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZdF-KB-3Ss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-229.59999999999999" y="-497.90104947526243"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="beer" width="1221" height="1300"/>
+    </resources>
 </document>
