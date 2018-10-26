@@ -12,6 +12,12 @@
 		CA783B62217B821D00329F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B60217B821D00329F32 /* Main.storyboard */; };
 		CA783B64217B821F00329F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA783B63217B821F00329F32 /* Assets.xcassets */; };
 		CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B65217B821F00329F32 /* LaunchScreen.storyboard */; };
+		CA783B71217B91FF00329F32 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B70217B91FF00329F32 /* Login.storyboard */; };
+		CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B72217B941A00329F32 /* SignInViewController.swift */; };
+		CA783B77217B9C3800329F32 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B76217B9C3800329F32 /* RegisterViewController.swift */; };
+		CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B78217BA66C00329F32 /* InitialLoginView.swift */; };
+		CA783B7D217BAD3F00329F32 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */; };
+		CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */; };
 		CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A4217B98D800F15D69 /* BeerListTableView.swift */; };
 		CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */; };
 		CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777AC217B9B4C00F15D69 /* Beer.swift */; };
@@ -26,6 +32,12 @@
 		CA783B63217B821F00329F32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA783B66217B821F00329F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA783B68217B821F00329F32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA783B70217B91FF00329F32 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CA783B72217B941A00329F32 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CA783B76217B9C3800329F32 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CA783B78217BA66C00329F32 /* InitialLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialLoginView.swift; sourceTree = "<group>"; };
+		CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		CBD777A4217B98D800F15D69 /* BeerListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableView.swift; sourceTree = "<group>"; };
 		CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		CBD777AC217B9B4C00F15D69 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
@@ -68,6 +80,12 @@
 				CA783B63217B821F00329F32 /* Assets.xcassets */,
 				CA783B65217B821F00329F32 /* LaunchScreen.storyboard */,
 				CA783B68217B821F00329F32 /* Info.plist */,
+				CA783B70217B91FF00329F32 /* Login.storyboard */,
+				CA783B72217B941A00329F32 /* SignInViewController.swift */,
+				CA783B76217B9C3800329F32 /* RegisterViewController.swift */,
+				CA783B78217BA66C00329F32 /* InitialLoginView.swift */,
+				CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */,
+				CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */,
 				CBD777A4217B98D800F15D69 /* BeerListTableView.swift */,
 				CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */,
 				CBD777AC217B9B4C00F15D69 /* Beer.swift */,
@@ -134,6 +152,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA783B71217B91FF00329F32 /* Login.storyboard in Resources */,
 				CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */,
 				CA783B64217B821F00329F32 /* Assets.xcassets in Resources */,
 				CA783B62217B821D00329F32 /* Main.storyboard in Resources */,
@@ -152,7 +171,12 @@
 				CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */,
 				CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */,
 				CA783B5F217B821D00329F32 /* ViewController.swift in Sources */,
+				CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */,
 				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
+				CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */,
+				CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */,
+				CA783B77217B9C3800329F32 /* RegisterViewController.swift in Sources */,
+				CA783B7D217BAD3F00329F32 /* KeychainItemAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
