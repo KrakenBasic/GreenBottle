@@ -82,7 +82,7 @@
                                     <outlet property="nameBeer" destination="JRd-LC-YsE" id="iPD-0I-wwk"/>
                                     <outlet property="porcentBeer" destination="sew-S1-kb0" id="F7h-tQ-xYt"/>
                                     <outlet property="sloganBeer" destination="2gS-gr-IYg" id="lzK-hn-SpE"/>
-                                    <segue destination="P2b-K9-Bzx" kind="show" id="ugC-Dp-MmX"/>
+                                    <segue destination="P2b-K9-Bzx" kind="show" identifier="detailSegue" id="ugC-Dp-MmX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -117,7 +117,7 @@
                                 <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beer" translatesAutoresizingMaskIntoConstraints="NO" id="15l-pr-WCQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="15l-pr-WCQ">
                                 <rect key="frame" x="0.0" y="64" width="118" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="127" id="KHd-XM-V7M"/>
@@ -132,14 +132,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-ub-8Ia" customClass="BeerDetailTableView" customModule="GreenBottle" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-ub-8Ia">
                                 <rect key="frame" x="0.0" y="326" width="375" height="243"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerDetailIdentifier" rowHeight="72" id="cCo-hP-7Up" customClass="BeerDetailTableViewCell" customModule="GreenBottle" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceDetailBeer" rowHeight="72" id="cCo-hP-7Up" customClass="BeerDetailPriceTableViewCell" customModule="GreenBottle" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cCo-hP-7Up" id="Cog-pE-QOe" customClass="BeerDetailTableViewCell" customModule="GreenBottle" customModuleProvider="target">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cCo-hP-7Up" id="Cog-pE-QOe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -180,6 +180,11 @@
                                                 <constraint firstItem="ZjZ-79-SU9" firstAttribute="top" secondItem="8Jg-Jk-6Ds" secondAttribute="bottom" constant="7" id="zPl-W1-0gC"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="price" destination="8Jg-Jk-6Ds" id="nuz-ga-PeT"/>
+                                            <outlet property="quantity" destination="Jky-ty-5gb" id="I1D-dI-3ZH"/>
+                                            <outlet property="size" destination="ZjZ-79-SU9" id="YUe-vY-1lC"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -217,10 +222,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ATU-Hd-WKd"/>
                     </view>
+                    <connections>
+                        <outlet property="descriptionBeer" destination="a85-mp-YzS" id="ivs-tJ-YNa"/>
+                        <outlet property="imageBeer" destination="15l-pr-WCQ" id="11F-k2-qe9"/>
+                        <outlet property="nameBeer" destination="Eqw-RX-DUR" id="v1D-gH-600"/>
+                        <outlet property="priceTableView" destination="VSv-ub-8Ia" id="eHh-bX-tVY"/>
+                        <outlet property="sloganBeer" destination="m57-y4-LQe" id="QYf-bP-e5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkO-c4-QMf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2779.7101449275365" y="-1236.8303571428571"/>
+            <point key="canvasLocation" x="2778.4000000000001" y="-1237.3313343328336"/>
         </scene>
         <!--Your Order-->
         <scene sceneID="BMm-FQ-GF1">
@@ -257,7 +269,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="jNa-1p-z6f">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5ah-2K-s5U" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Main" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5ah-2K-s5U" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RhU-7H-kGP">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -294,7 +306,4 @@
             <point key="canvasLocation" x="717.60000000000002" y="-1235.5322338830586"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="beer" width="1221" height="1300"/>
-    </resources>
 </document>

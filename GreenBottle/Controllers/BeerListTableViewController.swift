@@ -49,5 +49,14 @@ class BeerListTableViewController: UITableViewController {
         cell.barPorcentBeer.totalPorcent = Int(beer.porcent)!
         return cell
     }
+    
+    //MARK: Segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let beerDetailViewController = segue.destination as! BeerDetailViewController
+        let indexPath = tableView.indexPathForSelectedRow!
+        let selectedBeer = beers[indexPath.row]
+        
+        beerDetailViewController.beer = selectedBeer
+    }
 
 }
