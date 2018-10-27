@@ -33,9 +33,16 @@ class SignInViewController: UIViewController {
         }
         if passwordTextField.text == users.users[userEnter]{
             //Cambiar lo siguiente cuando se tenga acceso a las credenciales en el back:
-//            let register = self.storyboard?.instantiateViewController(withIdentifier: "LoginSB") as! RegisterViewController
+            
+            User.shared.isLogin = true
+            User.shared.name = userTextField.text!
+            User.shared.passwd = passwordTextField.text!
+            
+            let instance = UIStoryboard(name: "OrderFlow", bundle: Bundle.main)
+            
+            let register = instance.instantiateViewController(withIdentifier: "OrderFlow") as! UINavigationController
 ////            let register = RegisterViewController()
-//            present(register, animated: true, completion: nil)
+            present(register, animated: true, completion: nil)
             
         }
         

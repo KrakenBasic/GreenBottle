@@ -14,7 +14,6 @@
 		42D5B7F221837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5B7F121837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift */; };
 		4CECE233217C0D1F00041491 /* BeerPorcentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECE232217C0D1F00041491 /* BeerPorcentView.swift */; };
 		4CECE235217C1A8500041491 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECE234217C1A8500041491 /* BeerDetailViewController.swift */; };
-		CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B5C217B821D00329F32 /* AppDelegate.swift */; };
 		CA783B62217B821D00329F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B60217B821D00329F32 /* Main.storyboard */; };
 		CA783B64217B821F00329F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA783B63217B821F00329F32 /* Assets.xcassets */; };
 		CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B65217B821F00329F32 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,7 @@
 		CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B78217BA66C00329F32 /* InitialLoginView.swift */; };
 		CA783B7D217BAD3F00329F32 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */; };
 		CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */; };
+		CAB71E8A2184AF25007281C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B5C217B821D00329F32 /* AppDelegate.swift */; };
 		CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A4217B98D800F15D69 /* BeerListTableView.swift */; };
 		CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */; };
 		CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777AC217B9B4C00F15D69 /* Beer.swift */; };
@@ -238,10 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB71E8A2184AF25007281C3 /* AppDelegate.swift in Sources */,
 				4275BBA8217BA52A00A26910 /* EditProfileViewController.swift in Sources */,
 				4275BBA6217B9AE500A26910 /* UserProfileViewController.swift in Sources */,
 				42D5B7F021837BDE00E6CF43 /* User.swift in Sources */,
-				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 				42D5B7F221837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift in Sources */,
 				CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */,
 				FA93CF842183ED5100D9C2ED /* DataSource.swift in Sources */,
@@ -252,7 +252,6 @@
 				CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */,
 				CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */,
 				FAE6AA39217B95C900995BF7 /* OrderTableViewController.swift in Sources */,
-				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 				CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */,
 				CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */,
 				CA783B77217B9C3800329F32 /* RegisterViewController.swift in Sources */,
