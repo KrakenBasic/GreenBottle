@@ -63,16 +63,13 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
     
     @IBAction func saveButtonIsTap(_ sender: UIButton) {
         
-        guard nameTF.text != "", passwdTF.text != "", profileImage != nil else {
+        guard let user = nameTF.text, let pass = passwdTF.text, let image = profileImage.image  else {
             let alert = UIAlertController(title: "Error", message: "You need to have a Username and a Password", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return
         }
-        let currentUser = User()
-        currentUser.name =  nameTF.text!
-        currentUser.passwd = passwdTF.text!
-        currentUser.userImage = profileImage.image!
+        let currentUser = User(name: user, passwd: pass, userImage: image)
         delegate?.editProfileViewController(self, didFinishSaving: currentUser)
         //self.dismiss(animated: true, completion: nil)
         navigationController?.popViewController(animated: true)

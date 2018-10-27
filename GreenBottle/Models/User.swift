@@ -9,8 +9,11 @@
 import Foundation
 import UIKit
 
-class User{
-    var name: String = ""
-    var passwd: String = ""
+struct User{
+    var name: String
+    var passwd: String
     var userImage: UIImage = UIImage.init(named: "defaultUser")!
+    static var isLogin: Bool = false
+    
+    
 }
