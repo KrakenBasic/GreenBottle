@@ -155,34 +155,65 @@
                                                     <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="r09-t8-eji">
-                                                    <rect key="frame" x="266" y="21" width="94" height="29"/>
-                                                </stepper>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jky-ty-5gb">
                                                     <rect key="frame" x="169" y="17" width="27.5" height="36"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSk-5h-jEi">
+                                                    <rect key="frame" x="310" y="20" width="50" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="rdB-AQ-NcE"/>
+                                                        <constraint firstAttribute="height" constant="30" id="sOe-Rk-eqV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="+">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="addBeer:" destination="cCo-hP-7Up" eventType="touchUpInside" id="HpU-Pi-3KU"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gg2-wO-aP5">
+                                                    <rect key="frame" x="259" y="20" width="50" height="30"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="DyH-Uk-vK3"/>
+                                                        <constraint firstAttribute="height" constant="30" id="jzE-NV-P6w"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="-">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="restBeer:" destination="cCo-hP-7Up" eventType="touchUpInside" id="gGj-PL-LYP"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="gSk-5h-jEi" secondAttribute="trailing" constant="15" id="0eU-v0-ONX"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="8Jg-Jk-6Ds" secondAttribute="trailing" constant="20" symbolic="YES" id="3Gh-VO-ZTP"/>
                                                 <constraint firstItem="Jky-ty-5gb" firstAttribute="top" secondItem="Cog-pE-QOe" secondAttribute="top" constant="17" id="47J-SZ-9dY"/>
+                                                <constraint firstItem="gSk-5h-jEi" firstAttribute="leading" secondItem="gg2-wO-aP5" secondAttribute="trailing" constant="1" id="7P5-fV-DJf"/>
                                                 <constraint firstAttribute="bottom" secondItem="Jky-ty-5gb" secondAttribute="bottom" constant="18.5" id="8Di-oZ-ykI"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jky-ty-5gb" secondAttribute="trailing" id="E1K-Ob-zJt"/>
                                                 <constraint firstItem="8Jg-Jk-6Ds" firstAttribute="top" secondItem="Cog-pE-QOe" secondAttribute="top" constant="11" id="ET3-hB-6GG"/>
                                                 <constraint firstItem="Jky-ty-5gb" firstAttribute="leading" secondItem="Cog-pE-QOe" secondAttribute="leading" constant="169" id="F4V-0C-7LF"/>
-                                                <constraint firstAttribute="trailing" secondItem="r09-t8-eji" secondAttribute="trailing" constant="15" id="IME-D2-TzF"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZjZ-79-SU9" secondAttribute="trailing" constant="20" symbolic="YES" id="SbC-lU-Fvv"/>
-                                                <constraint firstItem="r09-t8-eji" firstAttribute="top" secondItem="Cog-pE-QOe" secondAttribute="top" constant="21" id="ePv-GM-wuU"/>
+                                                <constraint firstItem="gSk-5h-jEi" firstAttribute="top" secondItem="Cog-pE-QOe" secondAttribute="top" constant="20" id="eB2-Fg-vKl"/>
                                                 <constraint firstItem="8Jg-Jk-6Ds" firstAttribute="leading" secondItem="Cog-pE-QOe" secondAttribute="leading" constant="15" id="hA2-SB-rpJ"/>
                                                 <constraint firstItem="ZjZ-79-SU9" firstAttribute="leading" secondItem="Cog-pE-QOe" secondAttribute="leading" constant="15" id="j4T-FB-7ik"/>
+                                                <constraint firstItem="gg2-wO-aP5" firstAttribute="top" secondItem="Cog-pE-QOe" secondAttribute="top" constant="20" id="m86-ez-iE0"/>
                                                 <constraint firstItem="ZjZ-79-SU9" firstAttribute="top" secondItem="8Jg-Jk-6Ds" secondAttribute="bottom" constant="7" id="zPl-W1-0gC"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="addButtonBeer" destination="gSk-5h-jEi" id="oeD-vS-8xx"/>
                                             <outlet property="price" destination="8Jg-Jk-6Ds" id="nuz-ga-PeT"/>
                                             <outlet property="quantity" destination="Jky-ty-5gb" id="I1D-dI-3ZH"/>
+                                            <outlet property="restButtonBerr" destination="gg2-wO-aP5" id="9Qb-FB-7yN"/>
                                             <outlet property="size" destination="ZjZ-79-SU9" id="YUe-vY-1lC"/>
                                         </connections>
                                     </tableViewCell>
