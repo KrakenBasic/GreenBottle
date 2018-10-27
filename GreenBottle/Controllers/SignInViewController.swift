@@ -12,6 +12,7 @@ class SignInViewController: UIViewController {
     
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    let users = Users()
     
 
     override func viewDidLoad() {
@@ -27,12 +28,15 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
-        
-        if userTextField.text == "Josue" && passwordTextField.text == "12345"{
+        guard let userEnter = userTextField.text else {
+            return
+        }
+        if passwordTextField.text == users.users[userEnter]{
             //Cambiar lo siguiente cuando se tenga acceso a las credenciales en el back:
-            let register = self.storyboard?.instantiateViewController(withIdentifier: "LoginSB") as! RegisterViewController
-//            let register = RegisterViewController()
-            present(register, animated: true, completion: nil)
+//            let register = self.storyboard?.instantiateViewController(withIdentifier: "LoginSB") as! RegisterViewController
+////            let register = RegisterViewController()
+//            present(register, animated: true, completion: nil)
+            
         }
         
     }
