@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+struct Users {
+    let users: [String: String] = [
+        "josue": "12345",
+        "netosaurio": "11",
+        "gallo": "96"
+    ]
+    
+}

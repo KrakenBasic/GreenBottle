@@ -69,8 +69,10 @@ class EditProfileViewController: UIViewController,UIImagePickerControllerDelegat
             self.present(alert, animated: true, completion: nil)
             return
         }
-        let currentUser = User(name: user, passwd: pass, userImage: image)
-        delegate?.editProfileViewController(self, didFinishSaving: currentUser)
+        User.shared.name = user
+        User.shared.passwd = pass
+        User.shared.userImage = image
+        delegate?.editProfileViewController(self, didFinishSaving: User.shared)
         //self.dismiss(animated: true, completion: nil)
         navigationController?.popViewController(animated: true)
         

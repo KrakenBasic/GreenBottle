@@ -42,7 +42,7 @@ class OrderTableViewController: UITableViewController {
     }
 
     @IBAction func confirmation(_ sender: UIBarButtonItem) {
-        if User.isLogin {
+        if User.shared.isLogin {
             let alert = UIAlertController(title: "Confirm Order", message: "You order of \(price) is ready. Continue?", preferredStyle: .alert)
             let yesButton = UIAlertAction(title: "Yes", style: .default, handler: nil)
             let noButton = UIAlertAction(title: "No", style: .cancel, handler: nil)
@@ -51,7 +51,7 @@ class OrderTableViewController: UITableViewController {
             present(alert, animated: true)
         } else {
             let loginStoryboard = AppStoryboard.Login.instance
-            let loginScene = loginStoryboard.instantiateViewController(withIdentifier: "LoginSB") as! RegisterViewController
+            let loginScene = loginStoryboard.instantiateViewController(withIdentifier: "Login") as! UINavigationController
             present(loginScene, animated: true, completion: nil)
         }
     }
