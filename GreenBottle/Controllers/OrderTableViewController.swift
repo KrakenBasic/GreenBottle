@@ -14,7 +14,6 @@ class OrderTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.frame = CGRect(x: 10, y: 10, width: 1, height: 2)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
