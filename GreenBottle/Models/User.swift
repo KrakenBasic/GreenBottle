@@ -16,7 +16,7 @@ struct User{
     var name: String = ""
     var passwd: String = ""
     var userImage: UIImage = UIImage.init(named: "defaultUser")!
-    var isLogin: Bool = true
+    var isLogin: Bool = false
     
     
     
