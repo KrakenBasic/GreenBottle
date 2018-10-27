@@ -14,7 +14,6 @@ class OrderTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.frame = CGRect(x: 10, y: 10, width: 1, height: 2)
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,7 +43,9 @@ class OrderTableViewController: UITableViewController {
     @IBAction func confirmation(_ sender: UIBarButtonItem) {
         if User.shared.isLogin {
             let alert = UIAlertController(title: "Confirm Order", message: "You order of \(price) is ready. Continue?", preferredStyle: .alert)
-            let yesButton = UIAlertAction(title: "Yes", style: .default, handler: nil)
+            let yesButton = UIAlertAction(title: "Yes", style: .default) { (action) in
+                self.success()
+            }
             let noButton = UIAlertAction(title: "No", style: .cancel, handler: nil)
             alert.addAction(yesButton)
             alert.addAction(noButton)
@@ -54,5 +55,16 @@ class OrderTableViewController: UITableViewController {
             let loginScene = loginStoryboard.instantiateViewController(withIdentifier: "Login") as! UINavigationController
             present(loginScene, animated: true, completion: nil)
         }
+    }
+    
+    func success () {
+        let alert = UIAlertController(title: "Succes!", message: "Your beer is comming", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default) { (action) in
+            let mainStoryboard = AppStoryboard.Main.instance
+            let mainScene = mainStoryboard.instantiateViewController(withIdentifier: "Main") as! UITabBarController
+            self.present(mainScene, animated: true, completion: nil)
+        }
+        alert.addAction(okButton)
+        present(alert, animated: true)
     }
 }
