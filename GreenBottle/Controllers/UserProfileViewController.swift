@@ -30,10 +30,16 @@ class UserProfileViewController: UIViewController, EditProfileViewControllerDele
     @IBAction func profileIsTap(_ sender: Any) {
     }
     @IBAction func logOutIsTap(_ sender: Any) {
-        User.shared.isLogin = false
-        User.shared.name = ""
-        User.shared.passwd = ""
-        User.shared.userImage = UIImage.init(named: "defaultUser")!
+        if User.shared.isLogin == true {
+            User.shared.isLogin = false
+            User.shared.name = ""
+            User.shared.passwd = ""
+            User.shared.userImage = UIImage.init(named: "defaultUser")!
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Not an account", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion:  nil)
+        }
         
         let instance = UIStoryboard(name: "Main", bundle: Bundle.main)
         
