@@ -232,7 +232,9 @@
         <!--Navigation Controller-->
         <scene sceneID="crr-ci-MHT">
             <objects>
-                <navigationController storyboardIdentifier="UserProfile" automaticallyAdjustsScrollViewInsets="NO" id="Tk2-sq-y3p" sceneMemberID="viewController">
+
+                <navigationController storyboardIdentifier="UserProfileStoryboard" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tk2-sq-y3p" sceneMemberID="viewController">
+
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sS6-Q4-6Wg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
