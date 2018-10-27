@@ -90,7 +90,7 @@
 		CA783B5B217B821D00329F32 /* GreenBottle */ = {
 			isa = PBXGroup;
 			children = (
-				FA93CF812183E5E700D9C2ED /* Model */,
+				FA93CF812183E5E700D9C2ED /* Models */,
 				FA93CF802183E5CB00D9C2ED /* Controllers */,
 				FA93CF7F2183E5A200D9C2ED /* Views */,
 				FA93CF7E2183E58200D9C2ED /* Storyboards */,
@@ -101,8 +101,6 @@
 				CA783B68217B821F00329F32 /* Info.plist */,
 				CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */,
 				CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */,
-				FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */,
-				FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */,
 			);
 			path = GreenBottle;
 			sourceTree = "<group>";
@@ -110,6 +108,7 @@
 		FA93CF7E2183E58200D9C2ED /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */,
 				CA783B60217B821D00329F32 /* Main.storyboard */,
 				4275BBA3217B90F700A26910 /* UserProfileStoryboard.storyboard */,
 				CA783B70217B91FF00329F32 /* Login.storyboard */,
@@ -130,6 +129,7 @@
 		FA93CF802183E5CB00D9C2ED /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */,
 				4275BBA5217B9AE500A26910 /* UserProfileViewController.swift */,
 				4275BBA7217BA52A00A26910 /* EditProfileViewController.swift */,
 				CA783B72217B941A00329F32 /* SignInViewController.swift */,
@@ -141,13 +141,13 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		FA93CF812183E5E700D9C2ED /* Model */ = {
+		FA93CF812183E5E700D9C2ED /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				42D5B7EF21837BDE00E6CF43 /* User.swift */,
 				CBD777AC217B9B4C00F15D69 /* Beer.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,7 +236,6 @@
 				CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */,
 				CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */,
 				CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */,
-				CA783B5F217B821D00329F32 /* ViewController.swift in Sources */,
 				FAE6AA39217B95C900995BF7 /* OrderTableViewController.swift in Sources */,
 				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 				CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */,
