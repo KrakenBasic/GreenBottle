@@ -30,6 +30,15 @@ class UserProfileViewController: UIViewController, EditProfileViewControllerDele
     @IBAction func profileIsTap(_ sender: Any) {
     }
     @IBAction func logOutIsTap(_ sender: Any) {
+        User.shared.isLogin = false
+        User.shared.name = ""
+        User.shared.passwd = ""
+        User.shared.userImage = UIImage.init(named: "defaultUser")!
+        
+        let instance = UIStoryboard(name: "Main", bundle: Bundle.main)
+        
+        let register = instance.instantiateViewController(withIdentifier: "Main") as! UITabBarController
+        present(register, animated: true, completion: nil)
     }
     
     func editProfileViewController(_ controler: EditProfileViewController, didFinishSaving: User) {
