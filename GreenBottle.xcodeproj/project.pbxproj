@@ -28,6 +28,8 @@
 		CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */; };
 		CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777AC217B9B4C00F15D69 /* Beer.swift */; };
 		CBD777B3217BA80C00F15D69 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */; };
+		FAE6AA37217B919D00995BF7 /* OrderFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */; };
+		FAE6AA39217B95C900995BF7 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		CBD777AC217B9B4C00F15D69 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderFlow.storyboard; sourceTree = "<group>"; };
+		FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 				CA783B68217B821F00329F32 /* Info.plist */,
 				CA783B7C217BAD3F00329F32 /* KeychainItemAccessibility.swift */,
 				CA783B7E217BAD4F00329F32 /* KeychainWrapper.swift */,
+				FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */,
+				FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */,
 			);
 			path = GreenBottle;
 			sourceTree = "<group>";
@@ -207,6 +213,7 @@
 				CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */,
 				CA783B64217B821F00329F32 /* Assets.xcassets in Resources */,
 				CA783B62217B821D00329F32 /* Main.storyboard in Resources */,
+				FAE6AA37217B919D00995BF7 /* OrderFlow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +236,8 @@
 				CBD777A5217B98D800F15D69 /* BeerListTableView.swift in Sources */,
 				CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */,
 				CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */,
+				CA783B5F217B821D00329F32 /* ViewController.swift in Sources */,
+				FAE6AA39217B95C900995BF7 /* OrderTableViewController.swift in Sources */,
 				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 				CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */,
 				CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */,
