@@ -38,9 +38,9 @@ class SignInViewController: UIViewController {
             User.shared.name = userTextField.text!
             User.shared.passwd = passwordTextField.text!
             
-            let instance = UIStoryboard(name: "OrderFlow", bundle: Bundle.main)
+            let instance = UIStoryboard(name: "Main", bundle: Bundle.main)
             
-            let register = instance.instantiateViewController(withIdentifier: "OrderFlow") as! UINavigationController
+            let register = instance.instantiateViewController(withIdentifier: "Main") as! UITabBarController
 ////            let register = RegisterViewController()
             present(register, animated: true, completion: nil)
             
