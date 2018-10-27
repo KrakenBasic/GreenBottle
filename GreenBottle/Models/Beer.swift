@@ -8,33 +8,17 @@
 
 import Foundation
 
-struct Beer: Decodable {
-    let id: Int
-    let busnessId: Int
-    let name: String
-    let description: DescriptionBeer
-    let style: Style
-}
-
-struct DescriptionBeer: Codable {
-    let type: String
-    let category: String
-    let description: String
-    let create: Date
-    let update: Date
-}
-
-struct Style: Codable {
-    let styleName: String
-    let abv: Double
-    let ibu: Int?
-    let organic: Bool
-    let labelURLString: String?
+struct Beer{
+    var name: String
+    var slogan: String
+    var porcent: String
+    var info: String
     
-    var labelURL: URL? {
-        guard let url = labelURLString else { return nil }
-        return URL(string: url)
+    static func loadSampleBeers() ->[Beer]{
+        let beer = Beer(name: "Indio", slogan: "Orgullosamente Indio", porcent: "90", info: "Lorem.....")
+        let beer2 = Beer(name: "Carta Blanca", slogan: "La mejor desde los 50's", porcent: "55", info: "Lorem....")
+        let beer3 = Beer(name: "Modelo", slogan: "La cerveza obscura de México", porcent: "20", info: "Lorem.....")
+        
+        return [beer, beer2, beer3]
     }
 }
-
-
