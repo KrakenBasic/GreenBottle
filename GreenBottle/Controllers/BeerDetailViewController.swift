@@ -11,24 +11,27 @@ import UIKit
 class BeerDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var beer: Beer?
+    var sizes = [Size]()
     
     @IBOutlet weak var imageBeer: UIImageView!
     @IBOutlet weak var nameBeer: UILabel!
     @IBOutlet weak var sloganBeer: UILabel!
     @IBOutlet weak var descriptionBeer: UITextView!
     
-    
-    
     @IBOutlet weak var priceTableView: BeerPriceTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        priceTableView.delegate = self
+        //MARK: Data Beer
+        //priceTableView.delegate = self
         imageBeer.image = UIImage(named: "beer")
         nameBeer.text = beer?.name
         sloganBeer.text = beer?.slogan
-        //descriptionBeer
+        
+        //MARK: Size and Price
+        sizes = Size.loadSampleSizes()
+        
     }
     
     // MARK: Price Table View
@@ -48,11 +51,12 @@ class BeerDetailViewController: UIViewController, UITableViewDelegate, UITableVi
         guard let cell = priceTableView.dequeueReusableCell(withIdentifier: "PriceDetailBeer") as? BeerDetailPriceTableViewCell else {
             fatalError("Could not dequeue a cell.")
         }
+        let size = sizes[indexPath.row]
         
-        cell.price.text = "1.00 USD"
-        cell.size.text = "350 [ml]"
-        cell.quantity.text = "1"
-        
+        cell.price.text = size.price
+        cell.size.text = size.size
+        //cell.quantity.text = String(qty)
+
         return cell
     }
 
