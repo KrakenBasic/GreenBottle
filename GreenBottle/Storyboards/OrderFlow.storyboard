@@ -93,7 +93,7 @@
         <!--Navigation Controller-->
         <scene sceneID="THM-0U-BAt">
             <objects>
-                <navigationController storyboardIdentifier="OrderFlow" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IQX-NB-ixq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="OrderFlow" automaticallyAdjustsScrollViewInsets="NO" id="IQX-NB-ixq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5tf-Gz-lKx">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
