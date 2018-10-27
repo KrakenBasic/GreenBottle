@@ -14,7 +14,8 @@
 		42D5B7F221837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5B7F121837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift */; };
 		4CECE233217C0D1F00041491 /* BeerPorcentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECE232217C0D1F00041491 /* BeerPorcentView.swift */; };
 		4CECE235217C1A8500041491 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CECE234217C1A8500041491 /* BeerDetailViewController.swift */; };
-		CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B5C217B821D00329F32 /* AppDelegate.swift */; };
+		94FCACB12184AFB800353C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA783B5C217B821D00329F32 /* AppDelegate.swift */; };
+		94FCACB52184B9B700353C7C /* PaymentMethodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FCACB42184B9B700353C7C /* PaymentMethodsViewController.swift */; };
 		CA783B62217B821D00329F32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B60217B821D00329F32 /* Main.storyboard */; };
 		CA783B64217B821F00329F32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA783B63217B821F00329F32 /* Assets.xcassets */; };
 		CA783B67217B821F00329F32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA783B65217B821F00329F32 /* LaunchScreen.storyboard */; };
@@ -42,6 +43,7 @@
 		42D5B7F121837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewControllerDelegate.swift; sourceTree = "<group>"; };
 		4CECE232217C0D1F00041491 /* BeerPorcentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPorcentView.swift; sourceTree = "<group>"; };
 		4CECE234217C1A8500041491 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
+		94FCACB42184B9B700353C7C /* PaymentMethodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsViewController.swift; sourceTree = "<group>"; };
 		CA783B59217B821D00329F32 /* GreenBottle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenBottle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA783B5C217B821D00329F32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA783B61217B821D00329F32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				4CECE234217C1A8500041491 /* BeerDetailViewController.swift */,
 				CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */,
 				CA783B76217B9C3800329F32 /* RegisterViewController.swift */,
+				94FCACB42184B9B700353C7C /* PaymentMethodsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -238,10 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94FCACB12184AFB800353C7C /* AppDelegate.swift in Sources */,
 				4275BBA8217BA52A00A26910 /* EditProfileViewController.swift in Sources */,
+				94FCACB52184B9B700353C7C /* PaymentMethodsViewController.swift in Sources */,
 				4275BBA6217B9AE500A26910 /* UserProfileViewController.swift in Sources */,
 				42D5B7F021837BDE00E6CF43 /* User.swift in Sources */,
-				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 				42D5B7F221837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift in Sources */,
 				CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */,
 				FA93CF842183ED5100D9C2ED /* DataSource.swift in Sources */,
@@ -252,7 +256,6 @@
 				CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */,
 				CA783B79217BA66C00329F32 /* InitialLoginView.swift in Sources */,
 				FAE6AA39217B95C900995BF7 /* OrderTableViewController.swift in Sources */,
-				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 				CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */,
 				CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */,
 				CA783B77217B9C3800329F32 /* RegisterViewController.swift in Sources */,
