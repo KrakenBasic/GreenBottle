@@ -32,6 +32,7 @@
 		CBEE11EC2184BA7600F78DB9 /* BeerDetailPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEE11EB2184BA7600F78DB9 /* BeerDetailPriceTableViewCell.swift */; };
 		FA93CF842183ED5100D9C2ED /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93CF832183ED5100D9C2ED /* DataSource.swift */; };
 		FA93CF862183ED6000D9C2ED /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93CF852183ED6000D9C2ED /* Client.swift */; };
+		FA93CF882183FD9300D9C2ED /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93CF872183FD9300D9C2ED /* AppStoryboard.swift */; };
 		FAE6AA37217B919D00995BF7 /* OrderFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */; };
 		FAE6AA39217B95C900995BF7 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		CBEE11EB2184BA7600F78DB9 /* BeerDetailPriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailPriceTableViewCell.swift; sourceTree = "<group>"; };
 		FA93CF832183ED5100D9C2ED /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		FA93CF852183ED6000D9C2ED /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		FA93CF872183FD9300D9C2ED /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderFlow.storyboard; sourceTree = "<group>"; };
 		FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +150,7 @@
 				4CECE234217C1A8500041491 /* BeerDetailViewController.swift */,
 				CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */,
 				CA783B76217B9C3800329F32 /* RegisterViewController.swift */,
+				FA93CF872183FD9300D9C2ED /* AppStoryboard.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			files = (
 				CBEE11EA2184B6FD00F78DB9 /* AppDelegate.swift in Sources */,
 				4275BBA8217BA52A00A26910 /* EditProfileViewController.swift in Sources */,
+				FA93CF882183FD9300D9C2ED /* AppStoryboard.swift in Sources */,
 				4275BBA6217B9AE500A26910 /* UserProfileViewController.swift in Sources */,
 				42D5B7F021837BDE00E6CF43 /* User.swift in Sources */,
 				42D5B7F221837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift in Sources */,

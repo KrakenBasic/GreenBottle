@@ -10,10 +10,14 @@ import Foundation
 import UIKit
 
 struct User{
-    var name: String
-    var passwd: String
+    
+    static var shared = User()
+    
+    var name: String = ""
+    var passwd: String = ""
     var userImage: UIImage = UIImage.init(named: "defaultUser")!
-    static var isLogin: Bool = false
+    var isLogin: Bool = false
+    
     
     
 }
