@@ -52,7 +52,7 @@
                                         <state key="normal" title="Payments"/>
                                         <connections>
                                             <action selector="paymentsIsTap:" destination="IBY-Fb-FeU" eventType="touchUpInside" id="EQL-7s-DYb"/>
-                                            <segue destination="kCj-2q-O0u" kind="show" identifier="payments" id="5Vn-ry-bzT"/>
+                                            <segue destination="Phr-Uo-f2v" kind="show" id="z11-ej-oGe"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ls6-rR-4rH">
@@ -104,42 +104,52 @@
             </objects>
             <point key="canvasLocation" x="935.20000000000005" y="23.838080959520241"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ZiM-0d-SGk">
+        <!--Payment Methods View Controller-->
+        <scene sceneID="h2Q-KC-EAZ">
             <objects>
-                <viewController id="kCj-2q-O0u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7TW-gr-BqL">
+                <viewController id="Phr-Uo-f2v" customClass="PaymentMethodsViewController" customModule="GreenBottle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="khP-ZF-AQr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ESt-ro-Sgv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TwZ-7U-99C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jJV-wr-Ssc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MethodID" id="p3Y-sB-DgI">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jJV-wr-Ssc" id="qIo-Ea-pKh">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p3Y-sB-DgI" id="02q-aG-Gmg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Phr-Uo-f2v" id="gPq-tI-np8"/>
+                                    <outlet property="delegate" destination="Phr-Uo-f2v" id="3q6-U0-1GD"/>
+                                </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTQ-Wt-mwM">
+                                <rect key="frame" x="16" y="411" width="148" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Payment Method"/>
+                                <connections>
+                                    <action selector="addingPaymentMethod:" destination="Phr-Uo-f2v" eventType="touchUpInside" id="nG0-UE-E5T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ESt-ro-Sgv" firstAttribute="bottom" secondItem="FIW-Fk-dbM" secondAttribute="bottom" id="3YA-GD-Q1W"/>
-                            <constraint firstItem="ESt-ro-Sgv" firstAttribute="trailing" secondItem="FIW-Fk-dbM" secondAttribute="trailing" id="8Kl-vd-bXq"/>
-                            <constraint firstItem="ESt-ro-Sgv" firstAttribute="leading" secondItem="FIW-Fk-dbM" secondAttribute="leading" id="ACA-ge-c7U"/>
-                            <constraint firstItem="ESt-ro-Sgv" firstAttribute="top" secondItem="FIW-Fk-dbM" secondAttribute="top" id="e9F-8P-ylc"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="FIW-Fk-dbM"/>
+                        <viewLayoutGuide key="safeArea" id="2Pu-c2-8Nr"/>
                     </view>
+                    <connections>
+                        <outlet property="paymentTable" destination="TwZ-7U-99C" id="iPT-E5-j0d"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a7t-3F-FEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R85-gb-FsB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="-167.76611694152925"/>
+            <point key="canvasLocation" x="1880.8" y="-313.49325337331339"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="71I-af-Ejn">
@@ -222,7 +232,9 @@
         <!--Navigation Controller-->
         <scene sceneID="crr-ci-MHT">
             <objects>
+
                 <navigationController storyboardIdentifier="UserProfileStoryboard" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tk2-sq-y3p" sceneMemberID="viewController">
+
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sS6-Q4-6Wg">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
