@@ -28,6 +28,8 @@
 		CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */; };
 		CBD777AD217B9B4C00F15D69 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777AC217B9B4C00F15D69 /* Beer.swift */; };
 		CBD777B3217BA80C00F15D69 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */; };
+		FA93CF842183ED5100D9C2ED /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93CF832183ED5100D9C2ED /* DataSource.swift */; };
+		FA93CF862183ED6000D9C2ED /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93CF852183ED6000D9C2ED /* Client.swift */; };
 		FAE6AA37217B919D00995BF7 /* OrderFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */; };
 		FAE6AA39217B95C900995BF7 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		CBD777A8217B990800F15D69 /* BeerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListTableViewController.swift; sourceTree = "<group>"; };
 		CBD777AC217B9B4C00F15D69 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		CBD777B2217BA80C00F15D69 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		FA93CF832183ED5100D9C2ED /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		FA93CF852183ED6000D9C2ED /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		FAE6AA36217B919D00995BF7 /* OrderFlow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderFlow.storyboard; sourceTree = "<group>"; };
 		FAE6AA38217B95C900995BF7 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +94,7 @@
 		CA783B5B217B821D00329F32 /* GreenBottle */ = {
 			isa = PBXGroup;
 			children = (
+				FA93CF822183ED3100D9C2ED /* Services */,
 				FA93CF812183E5E700D9C2ED /* Models */,
 				FA93CF802183E5CB00D9C2ED /* Controllers */,
 				FA93CF7F2183E5A200D9C2ED /* Views */,
@@ -148,6 +153,15 @@
 				CBD777AC217B9B4C00F15D69 /* Beer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FA93CF822183ED3100D9C2ED /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA93CF832183ED5100D9C2ED /* DataSource.swift */,
+				FA93CF852183ED6000D9C2ED /* Client.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +244,7 @@
 				CA783B5D217B821D00329F32 /* AppDelegate.swift in Sources */,
 				42D5B7F221837E9E00E6CF43 /* EditProfileViewControllerDelegate.swift in Sources */,
 				CBD777A9217B990800F15D69 /* BeerListTableViewController.swift in Sources */,
+				FA93CF842183ED5100D9C2ED /* DataSource.swift in Sources */,
 				4CECE235217C1A8500041491 /* BeerDetailViewController.swift in Sources */,
 				CBD777B3217BA80C00F15D69 /* BeerTableViewCell.swift in Sources */,
 				4CECE233217C0D1F00041491 /* BeerPorcentView.swift in Sources */,
@@ -241,6 +256,7 @@
 				CA783B7F217BAD4F00329F32 /* KeychainWrapper.swift in Sources */,
 				CA783B73217B941A00329F32 /* SignInViewController.swift in Sources */,
 				CA783B77217B9C3800329F32 /* RegisterViewController.swift in Sources */,
+				FA93CF862183ED6000D9C2ED /* Client.swift in Sources */,
 				CA783B7D217BAD3F00329F32 /* KeychainItemAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
