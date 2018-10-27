@@ -21,6 +21,6 @@ class BeerTableViewCell: UITableViewCell {
     @IBOutlet weak var nameBeer: UILabel!
     @IBOutlet weak var sloganBeer: UILabel!
     @IBOutlet weak var porcentBeer: UILabel!
-
-
+    @IBOutlet weak var barPorcentBeer: BeerPorcentView!
+    
 }
